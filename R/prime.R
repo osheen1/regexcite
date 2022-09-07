@@ -9,16 +9,16 @@
 #' x = 7
 #' prime(7)
 #'
-p = 1
 prime <- function(x) {
+  p = 1
   if (x == 1) {
-    print("1 is not a prime number as it is only divisible by one number")
+    stop("1 is not a prime number as it is only divisible by one number")
   }
   else if (x %% 1 != 0){
-    print("Only integers can be prime")
+    stop("Only integers can be prime")
   }
   else if (x < 0){
-    print("Negative numbers cannot be prime")
+    stop("Negative numbers cannot be prime")
   }
   else{
     for (i in seq(x)) {

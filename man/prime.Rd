@@ -18,4 +18,5 @@ Prime Test
 \examples{
 x = 7
 prime(7)
+
 }
